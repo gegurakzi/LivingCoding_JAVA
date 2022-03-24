@@ -1,4 +1,5 @@
 import java.util.*;
+import tmp_pkg.tmp_cls;
 
 class Program{
     public static void main(String[] args){
@@ -57,8 +58,15 @@ class Array{
                 System.out.print(", ");
             }
         }
+    }
+}
 
-
-
+class Class_structure{
+    public static void main(String[] args){
+        int cv_access = tmp_cls.cv;
+        tmp_cls cls_access = new tmp_cls();
+        int iv_access = cls_access.iv;
+        System.out.println(cv_access);
+        System.out.println(iv_access);
     }
 }
